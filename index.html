@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Переход на levinadev.ru</title>
+  <meta name="description" content="Портфолио переехало на levinadev.ru">
+  <link rel="canonical" href="https://levinadev.ru/">
+  <meta http-equiv="refresh" content="0;url=https://levinadev.ru/">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+      --accent: #7c9cff;
+      --accent-hover: #a8b8ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a2332 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .card {
+      max-width: 28rem;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.65rem 1.35rem;
+      border-radius: 0.5rem;
+      background: var(--accent);
+      color: #0f1419;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+    a.button:hover {
+      background: var(--accent-hover);
+    }
+    a.button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .sub {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .sub a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Сайт переехал</h1>
+    <p>Портфолио теперь по адресу <strong>levinadev.ru</strong>. Сейчас должно открыться автоматически.</p>
+    <a class="button" href="https://levinadev.ru/">Перейти на levinadev.ru</a>
+    <p class="sub">Если перенаправление не сработало, нажмите кнопку выше.</p>
+  </main>
+</body>
+</html>
