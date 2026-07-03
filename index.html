@@ -1,86 +1,216 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Переход на levinadev.ru</title>
-  <meta name="description" content="Портфолио переехало на levinadev.ru">
-  <link rel="canonical" href="https://levinadev.ru/">
-  <meta http-equiv="refresh" content="0;url=https://levinadev.ru/">
-  <style>
-    :root {
-      --bg: #0f1419;
-      --text: #e8eaed;
-      --muted: #9aa0a6;
-      --accent: #7c9cff;
-      --accent-hover: #a8b8ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a2332 0%, var(--bg) 55%);
-      color: var(--text);
-      line-height: 1.5;
-    }
-    .card {
-      max-width: 28rem;
-      text-align: center;
-      padding: 2.5rem 2rem;
-      border-radius: 1rem;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
-    }
-    h1 {
-      margin: 0 0 0.75rem;
-      font-size: 1.35rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-    }
-    p {
-      margin: 0 0 1.5rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    a.button {
-      display: inline-block;
-      padding: 0.65rem 1.35rem;
-      border-radius: 0.5rem;
-      background: var(--accent);
-      color: #0f1419;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.15s ease, transform 0.15s ease;
-    }
-    a.button:hover {
-      background: var(--accent-hover);
-    }
-    a.button:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-    }
-    .sub {
-      margin-top: 1.25rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    .sub a {
-      color: var(--accent);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anna Levina — Портфолио</title>
+    <link rel="icon" href="static/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
-  <main class="card">
-    <h1>Сайт переехал</h1>
-    <p>Портфолио теперь по адресу <strong>levinadev.ru</strong>. Сейчас должно открыться автоматически.</p>
-    <a class="button" href="https://levinadev.ru/">Перейти на levinadev.ru</a>
-    <p class="sub">Если перенаправление не сработало, нажмите кнопку выше.</p>
-  </main>
+<body class="d-flex flex-column min-vh-100 bg-dark text-body">
+
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-body-tertiary border-bottom border-secondary border-opacity-25">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="#">Anna Levina</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="projects-tab" href="#">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" id="about-tab" href="#">Обо мне</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <div class="container py-4">
+            <div class="tab-content">
+                <!-- Вкладка ПРОЕКТЫ -->
+                <div class="tab-pane active" id="projects" role="tabpanel">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-11 col-xxl-10">
+                            <div class="row g-3 g-lg-4">
+
+                                <!-- 1. Foodgram -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/Foodgram.png" class="object-fit-cover" alt="Foodgram">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">Foodgram</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">Сервис для публикации рецептов с аккаунтами пользователей, избранным, подписками, списками покупок и управлением рецептами.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/foodgram" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2. YaCut -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/async-yacut.png" class="object-fit-cover" alt="YaCut">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">YaCut</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">Сервис сокращения ссылок для создания коротких URL и публикации пользовательских ссылок на скачивание файлов.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/async-yacut" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3. QRkot -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/QRkot_spreadsheets.png" class="object-fit-cover" alt="QRkot">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">QRkot</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">API для благотворительного сервиса помощи кошкам: аутентификация, пожертвования, проекты, роли и отчеты в Google Sheets.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/QRkot_spreadsheets" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4. Scrapy-парсер PEP -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/scrapy_parser_pep.png" class="object-fit-cover" alt="Scrapy-парсер PEP">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">Scrapy-парсер PEP</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">Асинхронный парсер на Scrapy для сбора данных PEP и выгрузки отчетов в CSV.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/scrapy_parser_pep" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5. Бронирование переговорных -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/room_reservation_spreadsheets.png" class="object-fit-cover" alt="Бронирование переговорных">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">Бронирование переговорных</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">Приложение на FastAPI для бронирования переговорных с интеграциями Google API и таблиц.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/room_reservation_spreadsheets" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6. Kittygram -->
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                                    <div class="card h-100 w-100 bg-body-tertiary border border-1 border-secondary border-opacity-25 shadow-sm rounded-2 overflow-hidden d-flex flex-column text-body">
+                                        <div class="ratio ratio-16x9 bg-body-secondary">
+                                            <img src="static/images/kittygram_final.png" class="object-fit-cover" alt="Kittygram">
+                                        </div>
+                                        <div class="card-body d-flex flex-column flex-grow-1 px-3 pt-3 pb-3">
+                                            <h5 class="card-title fw-bold mb-2 text-body-emphasis">Kittygram</h5>
+                                            <p class="card-text flex-grow-1 small text-body-secondary mb-3 lh-sm">Приложение для публикации фото питомцев на Django, DRF, React, PostgreSQL, Docker и Nginx.</p>
+                                            <div class="mt-auto w-100">
+                                                <div class="d-flex gap-2">
+                                                    <a href="https://github.com/levinadev/kittygram_final" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm w-50 rounded-2">GitHub</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка ОБО МНЕ -->
+                <div class="tab-pane" id="about" role="tabpanel">
+                    <h1 class="mb-4">Обо мне</h1>
+                    <div class="text-body-secondary col-12 col-lg-8">
+                        <p class="mb-3">Привет! 👋</p>
+                        <p class="mb-3">Меня зовут Анна. Я Backend-разработчик на Python.</p>
+                        <p class="mb-3">Работаю с FastAPI, Django, Flask и Pyramid, разрабатываю REST API, интеграции с внешними сервисами, фоновые задачи и внутренние инструменты автоматизации.</p>
+                        <p class="mb-3">Начинала как системный администратор, занималась поддержкой инфраструктуры и веб-сервисов. Постепенно автоматизировала рутинные процессы с помощью Python и перешла в backend-разработку.</p>
+                        <p class="mb-3">
+                            Также я создаю обучающие материалы. На Stepik доступен мой курс
+                            <a href="https://stepik.org/course/287877" class="link-light link-underline-opacity-50" target="_blank" rel="noopener noreferrer">«Создание сайта с нуля: Frontend, Backend и публикация в интернет»</a>,
+                            в котором я показываю, как с нуля создать и опубликовать полноценный веб-проект.
+                        </p>
+                        <p class="mb-2">Github: <a href="https://github.com/levinadev" class="link-light link-underline-opacity-50" target="_blank" rel="noopener noreferrer">https://github.com/levinadev</a></p>
+                        <p class="mb-2">Email: <a href="mailto:anna-levina@hotmail.com" class="link-light link-underline-opacity-50">anna-levina@hotmail.com</a></p>
+                        <p class="mb-4">Telegram: <a href="https://t.me/levinadev" class="link-light link-underline-opacity-50" target="_blank" rel="noopener noreferrer">@levinadev</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 border-top border-secondary border-opacity-25 mt-auto bg-body-tertiary">
+        <div class="container text-center">
+            <small class="text-body-secondary">© 2026 Anna Levina</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS только для меню-бургера -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Переключатель вкладок -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectsTab = document.getElementById('projects-tab');
+            const aboutTab = document.getElementById('about-tab');
+            const projectsPane = document.getElementById('projects');
+            const aboutPane = document.getElementById('about');
+
+            function activateTab(tab, pane) {
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+                tab.classList.add('active');
+                pane.classList.add('active');
+            }
+
+            projectsTab.addEventListener('click', function(e) {
+                e.preventDefault();
+                activateTab(projectsTab, projectsPane);
+            });
+
+            aboutTab.addEventListener('click', function(e) {
+                e.preventDefault();
+                activateTab(aboutTab, aboutPane);
+            });
+        });
+    </script>
+
 </body>
 </html>
