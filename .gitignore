@@ -1,5 +1,30 @@
-# Object file
-*.o
+# Folders
+Lib/
+Scripts/
+share/
 
-# Ada Library Information
-*.ali
+# Files
+pyvenv.cfg
+.idea/
+*.iml
+*.pyc
+*.pyo
+__pycache__/
+.env
+
+
+# Virtual environment
+venv/
+.python-version
+
+# Media uploads (не путать с Flask static/)
+/media/
+
+
+# Database
+*.sqlite3
+*.db
+
+
+# Migrations
+migrations/
